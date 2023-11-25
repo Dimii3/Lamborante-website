@@ -74,6 +74,18 @@ img {
   z-index: 100;
   transition: all 0.3s;
 }
+.nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav__logo {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #f17c0e;
+}
 .nav .nav-links__item {
   position: relative;
   font-size: 1.8rem;
@@ -694,8 +706,12 @@ img {
     justify-content: space-evenly;
     transform: translateX(100%);
   }
-  .nav__logo img {
-    height: 8rem;
+  .nav .wrapper {
+    flex-direction: column;
+  }
+  .nav__logo {
+    margin-bottom: 4rem;
+    font-size: 6rem;
   }
   .nav .nav-links {
     display: flex;
@@ -872,5 +888,22 @@ img {
   }
   .contact-info__text {
     max-width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .nav__logo {
+    font-size: 3.5rem;
+  }
+  .investments-content .investment {
+    width: 100%;
+  }
+  .about-right {
+    padding: 1rem;
+  }
+  .about-right__list {
+    text-align: left;
+  }
+  .about-right__item:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
